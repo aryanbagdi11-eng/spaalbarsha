@@ -137,12 +137,19 @@ section{ padding:96px 0; }
 
 /* ===== AREAS ===== */
 .areas{ background:var(--cream); }
-.areas-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
-.area-block{ background:var(--white); border:1px solid var(--line); border-radius:12px; padding:24px; }
+.areas-core-grid{ display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-bottom:44px; }
+.area-block{ background:var(--white); border:1px solid var(--line); border-radius:12px; padding:28px; }
 .area-block-primary{ border-color:var(--sage); background:rgba(107,144,128,0.06); }
 .area-tag{ display:inline-block; font-size:10.5px; font-weight:700; text-transform:uppercase; letter-spacing:0.06em; color:var(--sage); background:rgba(107,144,128,0.12); padding:4px 10px; border-radius:999px; margin-bottom:12px; }
-.area-block h3{ font-size:17px; margin-bottom:8px; color:var(--charcoal); }
-.area-block p{ font-size:13.5px; color:var(--stone); line-height:1.55; }
+.area-block h3{ font-size:19px; margin-bottom:8px; color:var(--charcoal); }
+.area-block p{ font-size:14px; color:var(--stone); line-height:1.6; }
+
+.areas-secondary{ border-top:1px solid var(--line); padding-top:36px; }
+.areas-secondary-label{ font-size:12.5px; font-weight:700; text-transform:uppercase; letter-spacing:0.06em; color:var(--stone); margin-bottom:20px; }
+.areas-secondary-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
+.area-block-light{ padding:16px 0; }
+.area-block-light h4{ font-family:var(--display); font-size:14.5px; font-weight:600; color:var(--charcoal); margin-bottom:6px; }
+.area-block-light p{ font-size:12.5px; color:var(--stone); line-height:1.5; }
 
 /* ===== WHY ===== */
 .why{ background:var(--charcoal-2); color:var(--white); }
@@ -227,7 +234,8 @@ footer{ background:var(--charcoal-2); color:rgba(244,243,239,0.7); padding:56px 
   .hero-media img{ height:280px; }
   .how-grid{ grid-template-columns:1fr; }
   .treatment-grid{ grid-template-columns:1fr 1fr; }
-  .areas-grid{ grid-template-columns:1fr 1fr; }
+  .areas-core-grid{ grid-template-columns:1fr; }
+  .areas-secondary-grid{ grid-template-columns:1fr 1fr; }
   .why-grid{ grid-template-columns:1fr; gap:32px; }
   .why-list{ grid-template-columns:1fr; }
   .faq-list{ grid-template-columns:1fr; }
@@ -238,7 +246,7 @@ footer{ background:var(--charcoal-2); color:rgba(244,243,239,0.7); padding:56px 
 @media (max-width: 560px){
   section{ padding:64px 0; }
   .treatment-grid{ grid-template-columns:1fr; }
-  .areas-grid{ grid-template-columns:1fr; }
+  .areas-secondary-grid{ grid-template-columns:1fr; }
   .match-form{ padding:22px; }
   .whatsapp-float{ right:16px; bottom:16px; width:54px; height:54px; }
 }
